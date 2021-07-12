@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEB</title>
+</head>
+<body>
+    <h1>WEB</h1>
+    <script>
+        // 리팩토링
+        ch = document.querySelector('body');
+    </script>
+         <input type="button" value="night" onclick="
+         // 만약 이 버튼의 value 값이 night라면 
+         if(this.value === 'night'){
+            ch.style.backgroundColor = 'black';
+            ch.style.color = 'white';
+             this.value = 'day';
+             // utterance = new SpeechSynthesisUtterance('야간');
+             // speechSynthesis.speak(utterance);            
+         // 그렇지 않다면
+         } else {
+            ch.style.backgroundColor = 'white';
+            ch.style.color = 'black';
+             this.value = 'night';
+             // utterance = new SpeechSynthesisUtterance('주간');
+             // speechSynthesis.speak(utterance);
+         }
+     ">
+
+
+    <input type="button" value="day" onclick="document.querySelector('body').style.backgroundColor='white'; 
+    ch.style.color='black';
+    //utterance = new SpeechSynthesisUtterance('아침이 되었습니다.');
+    //speechSynthesis.speak(utterance); ">
+    <input type="button" value="night" onclick="ch.style.backgroundColor='black'; 
+    ch.style.color='white'
+    //utterance = new SpeechSynthesisUtterance('밤이 되었습니다.');
+    //speechSynthesis.speak(utterance); ;">
+    <input type="button" value="pink" onclick="ch.style.backgroundColor='palevioletred'; 
+    document.querySelector('body').style.color='lightpink';">
+    <ol>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+    </ol>
+    <h2>Welcome</h2>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dignissimos ipsa quis voluptas quam sit. Aperiam illo soluta, ullam cupiditate autem provident accusamus quam, maxime veritatis maiores sapiente ipsum aspernatur.
+</body>
+</html>
