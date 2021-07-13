@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>레이아웃에 영향을 미치는 속성 : display</title>
+  
+  <style>
+    p {
+      width: 300px;
+      height: 300px;
+      background-color: pink;
+      display : inline;
+      /*display를 사용하면 원래 갖고 있던 html의 성격을 바꿀 수 있다*/
+      margin-top : 100px;
+      /* 상하 배치작업의 가능여부도 반대가 됨 
+      inline 요소로 바뀐 p태그는 상하 배치작업이 불가,
+      block 요소로 바뀐 a태그는 상하 배치작업이 가능*/
+      
+    }
+    
+    /* 만약 inline 요소와 block 요소를 모두 갖게 만들고 싶다면 
+    display : inline-block 사용 */
+    a {
+      width: 300px;
+      height: 300px;
+      background-color: yellow;
+      display: inline-block;
+      margin-top : 100px;
+    }
+  </style>
+  
+</head>
+<body>
+
+   <p>Block Element</p>
+   <p>Block Element</p>
+   <p>Block Element</p>
+   
+   <a href="#">Inline Element</a>
+   <a href="#">Inline Element</a>
+   <a href="#">Inline Element</a>
+
+</body>
+</html>
