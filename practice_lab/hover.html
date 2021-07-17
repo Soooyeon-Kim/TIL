@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>CSS Transtion</title>
+  
+  <style>
+
+    .transition {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition-property: width;
+        /* 가로폭이 변화하는데 걸리는 시간 2초 */
+        transition-duration: 2s;
+        /* transition-timing-function: 속도에 영향을 주는 function 
+        linear -> 일정한 속도를 유지 */
+        transition-timing-function : linear;
+        transition-delay: 1s;
+        
+    }
+    .transition:hover {
+         width: 300px; 
+        
+    }
+    
+  </style>
+  
+</head>
+<body>
+
+  <div class="transition"></div>
+
+</body>
+</html>
