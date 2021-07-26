@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        data=[
+                { id: 1, title: "html", description: "html is..." },
+                { id: 2, title: "css", description: "css is..." },
+                { id: 3, title: "js", description: "js is..." }
+            ]
+            // 3개의 객체를 하나의 객체로 배열에 담아서 이름을 주고 정리 정돈 한것
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href=''>WEB</a>
+
+        </h1>
+    </header>
+    <nav>
+        <ol id="nav">
+           <!--  <script>
+                
+                for(var i=0; i < data.length; i++){
+                    document.write(`<li><a href="${data[i].id}.html">${data[i].title}</a></li>`);
+                
+                }
+            </script>-->
+        </ol>
+    </nav>
+    <article>
+
+    </article>
+    <script>
+        var navTag = '';
+        for(var i=0; i < data.length; i++){
+            navTag = navTag + `<li><a href="${data[i].id}.html">${data[i].title}</a></li>`;
+    
+        }
+        document.querySelector('#nav').innerHTML = navTag;
+        function refreshNav(){
+            var navTag = '';
+        for(var i=0; i < data.length; i++){
+            navTag = navTag + `<li><a href="${data[i].id}.html">${data[i].title}</a></li>`;
+        }
+        document.querySelector('#nav').innerHTML = navTag;
+        }
+
+        refreshNav();
+
+        function setArticle(){
+            var title = 'Welcome'
+            var description = "Hello, WEB"
+            document.querySelector('article').innerHTML = `<h2>${title}</h2>${description}`;
+
+        }
+        setArticle();
+
+    </script>
+</body>
+</html>
